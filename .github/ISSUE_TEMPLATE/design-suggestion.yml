@@ -1,0 +1,32 @@
+name: Design suggestion / Sugerir melhoria
+description: Suggest a focused improvement to the visual system or AI guidance.
+title: "[Design]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Portuguese is welcome. Start with the user task and the problem; screenshots or references are useful when they clarify the proposal.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User task and problem / Tarefa e problema
+      description: Who is using the interface or skill, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change / Mudança proposta
+      description: Describe the smallest useful improvement and the area it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Examples or references / Exemplos ou referências
+      description: Optional screenshots, prompts, or links. Identify licenses if proposing third-party code or assets. Use fictional data.
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Constraints / Restrições
+      description: Brand, framework, mobile, accessibility, or performance considerations relevant to the suggestion.

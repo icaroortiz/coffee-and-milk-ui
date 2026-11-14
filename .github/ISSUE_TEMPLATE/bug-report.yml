@@ -1,0 +1,47 @@
+name: Bug report / Relatar problema
+description: Report a reproducible issue in the skill, examples, or documentation.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Portuguese is welcome. For security vulnerabilities, follow [SECURITY.md](https://github.com/icaroortiz/cafe-com-leite-ui/blob/main/SECURITY.md) instead of posting details here.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area / Área afetada
+      options:
+        - Skill instructions
+        - CSS preset
+        - Static gallery
+        - React + shadcn example
+        - Documentation or installation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduce / Como reproduzir
+      description: Include the version or commit, steps, and a minimal example. Redact private information.
+      placeholder: "1. Open…\n2. Select…\n3. Observe…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual behavior / Esperado e observado
+      description: Explain the difference. For skill issues, include the relevant prompt and resulting behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence / Ambiente e evidências
+      description: Browser, viewport, theme, OS, agent, or toolchain as relevant. Screenshots help visual reports; say whether a device was emulated.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting / Antes de enviar
+      options:
+        - label: I removed credentials, personal data, and private project content from this report.
+          required: true

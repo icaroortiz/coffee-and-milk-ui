@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR" data-soft-ui data-sui-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Café com Leite UI — amostra de material</title>
+    <link rel="stylesheet" href="soft-ui.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          400 15px/1.55 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 1100px;
+        margin: auto;
+        padding: max(28px, env(safe-area-inset-top))
+          max(20px, env(safe-area-inset-right))
+          max(32px, env(safe-area-inset-bottom))
+          max(20px, env(safe-area-inset-left));
+      }
+      header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+      }
+      h1 {
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        margin: 0.4rem 0;
+      }
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.1rem;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 8px 0;
+      }
+      button {
+        cursor: pointer;
+      }
+      .sample-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+        gap: 24px;
+      }
+      .sample-stack {
+        display: grid;
+        gap: 24px;
+        align-content: start;
+        min-width: 0;
+      }
+      .sample-panel {
+        padding: 24px;
+        min-width: 0;
+      }
+      .sample-hero {
+        padding: 28px;
+        background: var(--sui-primary);
+        color: var(--sui-on-primary);
+        border-radius: var(--sui-radius-panel);
+      }
+      .sample-hero h2 {
+        font-size: 1.65rem;
+        line-height: 1.2;
+        max-width: 16ch;
+      }
+      .sample-hero p {
+        max-width: 48ch;
+      }
+      .sample-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .sample-list li {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--sui-border);
+      }
+      .sample-list li:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      .sample-list .sui-status {
+        flex-shrink: 0;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .sample-metric {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+      }
+      .sample-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .sample-note {
+        font-size: 0.875rem;
+      }
+      #feedback {
+        min-height: 1.5em;
+      }
+      footer {
+        margin-top: 28px;
+        font-size: 0.8125rem;
+      }
+      @media (max-width: 720px) {
+        header {
+          align-items: start;
+          flex-direction: column;
+        }
+        .sample-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .sample-panel,
+        .sample-hero {
+          padding: 20px;
+        }
+      }
+      @media (max-width: 360px) {
+        .sample-list li {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+      @media (forced-colors: active) {
+        .sample-hero {
+          border: 1px solid CanvasText;
+          background: Canvas;
+          color: CanvasText;
+        }
+      }
+    </style>
+  </head>
+  <body class="sui-canvas">
+    <main>
+      <header>
+        <div>
+          <p class="sui-muted sample-note">Amostra local · Dados fictícios</p>
+          <h1>Seu trabalho, em foco.</h1>
+        </div>
+        <button
+          type="button"
+          class="sui-control"
+          id="theme"
+          aria-pressed="false"
+        >
+          Tema escuro
+        </button>
+      </header>
+      <div class="sample-grid">
+        <div class="sample-stack">
+          <section class="sample-hero">
+            <h2>Organize o que importa hoje.</h2>
+            <p>
+              Uma ação principal, conteúdo bem distribuído e profundidade na
+              medida certa.
+            </p>
+          </section>
+          <section class="sui-surface sample-panel">
+            <h2>Uma rotina clara</h2>
+            <ul class="sample-list">
+              <li>
+                <span>Perfil da empresa</span
+                ><span class="sui-status sui-status--success">Concluído</span>
+              </li>
+              <li>
+                <span>Revisão dos materiais</span
+                ><span class="sui-status sui-status--warning">Pendente</span>
+              </li>
+              <li>
+                <span>Informação incompleta</span
+                ><span class="sui-status sui-status--danger">Atenção</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="sample-stack">
+          <section class="sui-surface sample-panel">
+            <label for="search">Busca de exemplo</label
+            ><input
+              class="sui-control sui-field"
+              id="search"
+              type="search"
+              placeholder="Experimente o foco do campo"
+              aria-describedby="search-note"
+            />
+            <p class="sui-muted sample-note" id="search-note">
+              Amostra visual: não consulta nenhum servidor.
+            </p>
+          </section>
+          <section class="sui-surface sample-panel">
+            <h2>Seu próximo passo</h2>
+            <div class="sample-metric">3 de 4</div>
+            <p class="sui-muted">Exemplo de progresso, sem dados reais.</p>
+            <div class="sample-actions">
+              <button type="button" class="sui-control sui-primary" id="review">
+                Conferir exemplo</button
+              ><button type="button" class="sui-control" disabled>
+                Indisponível
+              </button>
+            </div>
+            <p class="sample-note" id="feedback" role="status"></p>
+          </section>
+        </div>
+      </div>
+      <footer class="sui-muted">
+        Preset independente de framework. A integração shadcn/ui e os fluxos
+        reais devem ser validados no projeto de destino.
+      </footer>
+    </main>
+    <script>
+      document.getElementById("theme").addEventListener("click", function () {
+        const dark = document.documentElement.dataset.suiTheme !== "dark";
+        document.documentElement.dataset.suiTheme = dark ? "dark" : "light";
+        this.setAttribute("aria-pressed", String(dark));
+      });
+      document.getElementById("review").addEventListener("click", function () {
+        document.getElementById("feedback").textContent =
+          "Exemplo conferido. Nenhum dado foi salvo.";
+      });
+    </script>
+  </body>
+</html>

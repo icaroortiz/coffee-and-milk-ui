@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">Café com Leite UI</title>
+<desc id="desc">Soft UI guidance for AI coding agents. A warm neutral canvas with burgundy, blue and teal interface surfaces.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#faf8f5"/><stop offset="1" stop-color="#eee9e3"/></linearGradient>
+ <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f1eeeb"/></linearGradient>
+ <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#8a365e"/><stop offset="1" stop-color="#5b2e46"/></linearGradient>
+ <filter id="shadow" x="-25%" y="-25%" width="160%" height="170%"><feDropShadow dx="10" dy="14" stdDeviation="14" flood-color="#3b2945" flood-opacity=".12"/></filter>
+</defs>
+<rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+<path d="M50 1h1180a49 49 0 0 1 49 49" stroke="white" stroke-width="2" fill="none"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#302631">
+ <rect x="56" y="52" width="44" height="44" rx="14" fill="#302631"/>
+ <text x="67" y="84" font-size="32" font-weight="700" fill="#faf8f5">c.</text>
+ <text x="116" y="77" font-size="12" font-weight="700" letter-spacing="2.2">A DESIGN SKILL FOR AI AGENTS</text>
+ <text x="55" y="180" font-size="64" font-weight="700" letter-spacing="-3">Café com Leite UI</text>
+ <text x="58" y="222" font-size="23" fill="#675667">Good interfaces. Every day.</text>
+ <text x="58" y="263" font-size="16" fill="#675667">Thoughtful hierarchy. Subtle depth. Your brand.</text>
+ <g font-size="12" font-weight="700">
+  <rect x="57" y="316" width="90" height="34" rx="17" fill="#fff" stroke="#d3c8cf"/><text x="77" y="338">Soft UI</text>
+  <rect x="157" y="316" width="107" height="34" rx="17" fill="#fff" stroke="#d3c8cf"/><text x="177" y="338">shadcn/ui</text>
+  <rect x="274" y="316" width="94" height="34" rx="17" fill="#fff" stroke="#d3c8cf"/><text x="294" y="338">Tailwind</text>
+  <rect x="378" y="316" width="97" height="34" rx="17" fill="#fff" stroke="#d3c8cf"/><text x="399" y="338">MIT</text><circle cx="454" cy="333" r="4" fill="#187360"/>
+ </g>
+</g>
+<g transform="translate(825 60) rotate(5 165 145)" filter="url(#shadow)">
+ <rect width="355" height="302" rx="27" fill="url(#panel)" stroke="#fff" stroke-width="2"/>
+ <circle cx="28" cy="27" r="4" fill="#b4a6ad"/><circle cx="42" cy="27" r="4" fill="#d2c6cd"/><circle cx="56" cy="27" r="4" fill="#d2c6cd"/>
+ <rect x="20" y="52" width="315" height="107" rx="18" fill="url(#accent)"/>
+ <text x="39" y="84" fill="#f6e5ed" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">YOUR PRODUCT. YOUR PALETTE.</text>
+ <rect x="39" y="104" width="167" height="9" rx="4.5" fill="#fff"/>
+ <rect x="39" y="124" width="110" height="6" rx="3" fill="#dfc4d0"/>
+ <rect x="20" y="175" width="95" height="64" rx="15" fill="#e9dce5" stroke="#fff"/>
+ <rect x="130" y="175" width="95" height="64" rx="15" fill="#dce8f4" stroke="#fff"/>
+ <rect x="240" y="175" width="95" height="64" rx="15" fill="#d8e9e3" stroke="#fff"/>
+ <circle cx="45" cy="199" r="7" fill="#8a365e"/><circle cx="155" cy="199" r="7" fill="#326491"/><circle cx="265" cy="199" r="7" fill="#236f5d"/>
+ <rect x="37" y="217" width="48" height="5" rx="2.5" fill="#b397a7"/><rect x="147" y="217" width="48" height="5" rx="2.5" fill="#90acc5"/><rect x="257" y="217" width="48" height="5" rx="2.5" fill="#8cafa2"/>
+ <rect x="20" y="256" width="315" height="26" rx="13" fill="#e8e1e6" stroke="#ddd3db"/>
+ <circle cx="36" cy="269" r="4" fill="none" stroke="#796674" stroke-width="1.5"/><path d="m39 272 3 3" stroke="#796674" stroke-width="1.5"/>
+ <rect x="53" y="267" width="126" height="4" rx="2" fill="#c2b5be"/>
+</g>
+</svg>

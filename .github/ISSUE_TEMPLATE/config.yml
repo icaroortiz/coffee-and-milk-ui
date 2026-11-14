@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AI integration / Integração com IA
+    url: https://github.com/icaroortiz/cafe-com-leite-ui/blob/main/docs/AI-INTEGRATION.md
+    about: Installation, scope, and prompts for using the skill in another project.
+  - name: Private security report / Relato privado de segurança
+    url: https://github.com/icaroortiz/cafe-com-leite-ui/security/advisories/new
+    about: Report vulnerabilities privately. Do not include sensitive details in public issues.
