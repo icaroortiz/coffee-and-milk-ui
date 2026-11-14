@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
 <title id="title">Coffee &amp; Milk UI</title>
-<desc id="desc">Soft UI guidance for AI coding agents. A warm neutral canvas with burgundy, blue and teal interface surfaces.</desc>
+<desc id="desc">The everyday essentials of great interfaces. Soft UI guidance for AI coding agents, with clear hierarchy, subtle depth and room for your brand.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#faf8f5"/><stop offset="1" stop-color="#eee9e3"/></linearGradient>
  <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f1eeeb"/></linearGradient>
@@ -14,7 +14,7 @@
  <text x="67" y="84" font-size="32" font-weight="700" fill="#faf8f5">c.</text>
  <text x="116" y="77" font-size="12" font-weight="700" letter-spacing="2.2">A DESIGN SKILL FOR AI AGENTS</text>
  <text x="55" y="180" font-size="64" font-weight="700" letter-spacing="-3">Coffee &amp; Milk UI</text>
- <text x="58" y="222" font-size="23" fill="#675667">Good interfaces. Every day.</text>
+ <text x="58" y="222" font-size="23" fill="#675667">The everyday essentials of great interfaces.</text>
  <text x="58" y="263" font-size="16" fill="#675667">Thoughtful hierarchy. Subtle depth. Your brand.</text>
  <g font-size="12" font-weight="700">
   <rect x="57" y="316" width="90" height="34" rx="17" fill="#fff" stroke="#d3c8cf"/><text x="77" y="338">Soft UI</text>

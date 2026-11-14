@@ -2,7 +2,7 @@
 
 ![Coffee & Milk UI — orientação de Soft UI para agentes de programação](docs/images/banner.svg)
 
-### O essencial de uma interface bem pensada, para o dia a dia.
+### O essencial do dia a dia para ótimas interfaces.
 
 [![CI](https://github.com/icaroortiz/coffee-and-milk-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/icaroortiz/coffee-and-milk-ui/actions/workflows/ci.yml)
 [![Versão 0.2.0](https://img.shields.io/badge/version-0.2.0-82334f)](CHANGELOG.md)
@@ -12,7 +12,7 @@
 
 Uma **skill reutilizável para agentes de programação criarem dashboards e áreas internas**. Traz hierarquia clara, profundidade discreta de Soft UI, cores coerentes e orientações práticas de **shadcn/ui + Tailwind** para o projeto que você já tem.
 
-**O essencial do dia a dia. A paleta é do seu produto.**
+**O básico bem-feito:** tipografia clara, espaçamento consistente, controles acessíveis e respostas úteis às ações. Seu produto mantém a própria paleta e identidade.
 
 ![Dashboard de agenda em vinho construído com Coffee & Milk UI](docs/images/gallery-desktop.png)
 

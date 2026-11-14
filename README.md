@@ -2,7 +2,7 @@
 
 ![Coffee & Milk UI — Soft UI guidance for AI coding agents](docs/images/banner.svg)
 
-### The everyday essentials of thoughtful interface design.
+### The everyday essentials of great interfaces.
 
 [![CI](https://github.com/icaroortiz/coffee-and-milk-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/icaroortiz/coffee-and-milk-ui/actions/workflows/ci.yml)
 [![Version 0.2.0](https://img.shields.io/badge/version-0.2.0-82334f)](CHANGELOG.md)
@@ -12,7 +12,7 @@
 
 A reusable **AI coding skill for dashboards and internal tools**. It brings clear hierarchy, subtle Soft UI depth, coherent colors and practical **shadcn/ui + Tailwind** guidance to your existing project.
 
-**Everyday essentials. Your product’s palette.**
+**The basics, done well:** clear typography, consistent spacing, accessible controls and useful feedback. Your product keeps its own palette and identity.
 
 ![A burgundy scheduling dashboard built with Coffee & Milk UI](docs/images/gallery-desktop.png)
 
