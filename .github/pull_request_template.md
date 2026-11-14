@@ -16,4 +16,6 @@ For skill behavior changes, include a representative prompt, expected behavior, 
 - [ ] Any included third-party code or assets have their source and license recorded.
 - [ ] Skill instructions stay within design work and do not expose data, bypass permissions or follow untrusted reference instructions.
 
-Merge requires the **Repository and React example** check, an up-to-date branch, resolved conversations and code-owner approval. New commits that change the diff invalidate earlier approval.
+All PRs require the **Repository and React example** check, an up-to-date branch and resolved conversations. Community contributions require @icaroortiz's code-owner approval; new commits that change the diff invalidate earlier approval.
+
+The sole maintainer uses an owner-account review exception for their own PRs, without bypassing CI. The exception belongs to the merging account, not the PR author. See the [maintainer workflow](../CONTRIBUTING.md#sole-maintainer-workflow) for its scope and AI-assisted review guidance.
