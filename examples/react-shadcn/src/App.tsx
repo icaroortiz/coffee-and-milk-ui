@@ -424,7 +424,7 @@ export function App() {
             {message}
           </p>
           <footer id="guidance">
-            <strong>Café com Leite UI</strong>
+            <strong>Coffee & Milk UI</strong>
             <span>
               React + shadcn/ui · Fictional data · Changes stay in memory
             </span>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coffee & Milk UI"
+  short_description: "Subtle Soft UI for dashboards and shadcn/ui"
+  default_prompt: "Use $coffee-and-milk-ui to refine this interface with subtle Soft UI depth, adapting to its brand and preserving existing functionality."

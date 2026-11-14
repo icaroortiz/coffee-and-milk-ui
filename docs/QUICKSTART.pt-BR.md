@@ -1,4 +1,4 @@
-# Comece com Café com Leite UI
+# Comece com Coffee & Milk UI
 
 [English](QUICKSTART.md) · [README](../README.pt-BR.md) · [Guia para agentes de IA](AI-INTEGRATION.md)
 
@@ -11,17 +11,17 @@ Instale a skill uma vez e peça à IA para aplicá-la no projeto desejado. Ela o
 Cole **no chat do Codex**, não no terminal:
 
 ```text
-$skill-installer instale a skill em https://github.com/icaroortiz/cafe-com-leite-ui/tree/main/skills/cafe-com-leite-ui
+$skill-installer instale a skill em https://github.com/icaroortiz/coffee-and-milk-ui/tree/main/skills/coffee-and-milk-ui
 ```
 
-Depois, invoque `$cafe-com-leite-ui` na tarefa. O Codex detecta novas skills automaticamente; se ela não aparecer, reinicie o Codex. [Documentação oficial de skills](https://learn.chatgpt.com/docs/build-skills).
+Depois, invoque `$coffee-and-milk-ui` na tarefa. O Codex detecta novas skills automaticamente; se ela não aparecer, reinicie o Codex. [Documentação oficial de skills](https://learn.chatgpt.com/docs/build-skills).
 
 ### Pelo terminal
 
 Como alternativa, com **Node.js 22.20 ou superior**, use a CLI aberta `skills`, da Vercel:
 
 ```sh
-npx skills add icaroortiz/cafe-com-leite-ui --skill cafe-com-leite-ui --agent codex --global
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent codex --global
 ```
 
 `--global` disponibiliza a skill para seus projetos. Para instalar somente no projeto atual, execute dentro dele e retire `--global`. Escolha uma das duas formas para evitar instalações duplicadas. Essa CLI instala instruções para agentes; não adiciona uma dependência visual à aplicação. [Requisitos e instalação](https://github.com/vercel-labs/skills), [opções do comando](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
@@ -31,7 +31,7 @@ npx skills add icaroortiz/cafe-com-leite-ui --skill cafe-com-leite-ui --agent co
 Troque os campos opcionais se quiser: **tela**, **público** e **marca**. Se não os informar, a IA deve partir do contexto existente.
 
 ```text
-Use $cafe-com-leite-ui para refinar o dashboard e a área interna deste projeto.
+Use $coffee-and-milk-ui para refinar o dashboard e a área interna deste projeto.
 
 Contexto opcional: tela [nome]; público [quem usa]; marca [cores e referências].
 Inspecione primeiro o projeto e infira o que já estiver definido: stack,
@@ -63,10 +63,16 @@ Não publique automaticamente.
 
 ## 3. Usando outra IA
 
-Copie a **pasta completa** `skills/cafe-com-leite-ui/` para um local que a ferramenta consiga ler, por exemplo `design-skills/cafe-com-leite-ui/`. Preserve os arquivos e caminhos relativos das referências. Troque a primeira linha do prompt por:
+Copie a **pasta completa** `skills/coffee-and-milk-ui/` para um local que a ferramenta consiga ler, por exemplo `design-skills/coffee-and-milk-ui/`. Preserve os arquivos e caminhos relativos das referências. Troque a primeira linha do prompt por:
 
 ```text
-Leia design-skills/cafe-com-leite-ui/SKILL.md e aplique suas orientações nesta tarefa.
+Leia design-skills/coffee-and-milk-ui/SKILL.md e aplique suas orientações nesta tarefa.
 ```
 
 Se a ferramenta não acessar arquivos locais ou links do GitHub, anexe o `SKILL.md` e as referências necessárias. Colar a URL, por si só, não garante que Lovable ou outra IA carregue a skill. Para detalhes sobre shadcn, CSS opcional e adaptação ao projeto, consulte o [guia de integração](AI-INTEGRATION.md).
+
+## Atualizando da Café com Leite UI
+
+O projeto e a skill foram renomeados na v0.2.0. Instale `coffee-and-milk-ui` por um dos métodos acima e use `$coffee-and-milk-ui`. Depois de confirmar a nova instalação, remova a antiga `cafe-com-leite-ui` pelo mesmo instalador ou mova sua pasta para fora do diretório de skills ativas do seu cliente. Preserve eventuais personalizações antes de substituí-la.
+
+Atualize prompts salvos e favoritos. A demonstração agora está em [coffee-and-milk-ui](https://icaroortiz.github.io/coffee-and-milk-ui/). O CSS já copiado mantém o mesmo escopo `[data-soft-ui]` e os tokens `--sui-*`; sua aplicação não precisa migrar o tema. A versão v0.1.0 continua arquivada com seu nome original.

@@ -43,14 +43,14 @@ def main():
         raise ValueError("Repository check failed:\n- " + "\n- ".join(errors))
     output.mkdir(parents=True, exist_ok=True)
     files = list(source_files())
-    skill = ROOT / "skills/cafe-com-leite-ui"
+    skill = ROOT / "skills/coffee-and-milk-ui"
     packages = {
-        f"cafe-com-leite-ui-{args.version}-skill.zip": [
-            (path, "cafe-com-leite-ui/" + path.relative_to(skill).as_posix())
+        f"coffee-and-milk-ui-{args.version}-skill.zip": [
+            (path, "coffee-and-milk-ui/" + path.relative_to(skill).as_posix())
             for path in files if path.is_relative_to(skill)
         ],
-        f"cafe-com-leite-ui-{args.version}-source.zip": [
-            (path, f"cafe-com-leite-ui-{args.version}/" + path.relative_to(ROOT).as_posix())
+        f"coffee-and-milk-ui-{args.version}-source.zip": [
+            (path, f"coffee-and-milk-ui-{args.version}/" + path.relative_to(ROOT).as_posix())
             for path in files
         ],
     }

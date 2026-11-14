@@ -1,10 +1,10 @@
-# Working on Café com Leite UI
+# Working on Coffee & Milk UI
 
-These instructions are for agents **maintaining this repository**. To apply the visual system to another product, read [`skills/cafe-com-leite-ui/SKILL.md`](skills/cafe-com-leite-ui/SKILL.md) instead. Do not restyle unrelated projects merely because this repository is open.
+These instructions are for agents **maintaining this repository**. To apply the visual system to another product, read [`skills/coffee-and-milk-ui/SKILL.md`](skills/coffee-and-milk-ui/SKILL.md) instead. Do not restyle unrelated projects merely because this repository is open.
 
 ## Repository map
 
-- `skills/cafe-com-leite-ui/`: the installable skill, optional scoped CSS, and focused references. The canonical skill language is English.
+- `skills/coffee-and-milk-ui/`: the installable skill, optional scoped CSS, and focused references. The canonical skill language is English.
 - `examples/gallery/`: a dependency-free visual gallery with fictional studio and operations data.
 - `examples/react-shadcn/`: a runnable React example using actual shadcn/Radix components, Tailwind CSS 3, and a pinned npm lockfile.
 - `docs/`: AI integration guidance, screenshots, and dated validation evidence.
@@ -14,7 +14,7 @@ These instructions are for agents **maintaining this repository**. To apply the 
 ## Change the smallest useful thing
 
 - Preserve the distinction between agent guidance, optional CSS, and demonstration code. This is not a published React component library or a universal theme.
-- Let the consuming product keep its brand, stack, density, and behavior. Café com Leite is the name, not a required color palette.
+- Let the consuming product keep its brand, stack, density, and behavior. Coffee & Milk is the name, not a required color palette.
 - Keep `SKILL.md` focused on decisions; put conditional details in the relevant reference. Avoid adding a universal rule for one example's workaround.
 - Keep both READMEs consistent when setup, scope, or usage changes. Write documentation directly; the visual skill does not impose a special prose style.
 - Keep CSS scoped. Preserve accessible names, visible focus, theme inheritance through portals, and underlying component contracts.

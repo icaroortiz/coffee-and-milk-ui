@@ -1,6 +1,13 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 — 2026-11-14
+
+### Renamed
+
+- Café com Leite UI is now **Coffee & Milk UI**. The repository, skill folder and invocation use `coffee-and-milk-ui`.
+- Updated examples, artwork, install commands, release archives and demo links.
+- Existing copied CSS keeps its `soft-ui` namespace and remains compatible; no theme or component migration is required.
+- For an existing skill installation, follow the migration note in the [quickstart](docs/QUICKSTART.md#upgrading-from-café-com-leite-ui).
 
 ### Documentation
 
@@ -9,7 +16,7 @@
 
 ## 0.1.0 — 2026-11-14
 
-First community edition of Café com Leite UI.
+First community edition, originally published as Café com Leite UI.
 
 ### Added
 

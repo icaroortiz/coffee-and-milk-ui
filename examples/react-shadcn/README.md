@@ -4,7 +4,7 @@
 
 ## English
 
-A small fictional studio scheduler showing Café com Leite UI in a real React application. It uses actual shadcn/ui `Button`, `Input`, `Label` and `Dialog` components, including the Radix dialog portal, focus management and Escape behavior.
+A small fictional studio scheduler showing Coffee & Milk UI in a real React application. It uses actual shadcn/ui `Button`, `Input`, `Label` and `Dialog` components, including the Radix dialog portal, focus management and Escape behavior.
 
 ### Run locally
 
@@ -16,7 +16,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://127.0.0.1:5173`). Keep this folder inside the repository: the stylesheet imports the shared preset from `../../skills/cafe-com-leite-ui/assets/soft-ui.css` relative to the example root.
+Open the local URL printed by Vite (normally `http://127.0.0.1:5173`). Keep this folder inside the repository: the stylesheet imports the shared preset from `../../skills/coffee-and-milk-ui/assets/soft-ui.css` relative to the example root.
 
 ```sh
 npm run typecheck

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Stage the static gallery and built React example for GitHub Pages.
 
-Run npm run build -- --base /cafe-com-leite-ui/react/ in the React example first.
+Run npm run build -- --base /coffee-and-milk-ui/react/ in the React example first.
 Only staging copies are rewritten; example source stays useful locally.
 """
 
@@ -53,7 +53,7 @@ def validate_site(output, prefix):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, default=ROOT / "_site")
-    parser.add_argument("--repository", default="icaroortiz/cafe-com-leite-ui")
+    parser.add_argument("--repository", default="icaroortiz/coffee-and-milk-ui")
     args = parser.parse_args()
     if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", args.repository):
         parser.error("--repository must be owner/repository")
@@ -73,7 +73,7 @@ def main():
     gallery = ROOT / "examples/gallery"
     html = (gallery / "index.html").read_text()
     replacements = {
-        "../../skills/cafe-com-leite-ui/assets/soft-ui.css": "assets/soft-ui.css",
+        "../../skills/coffee-and-milk-ui/assets/soft-ui.css": "assets/soft-ui.css",
         "../../README.pt-BR.md": f"https://github.com/{args.repository}/blob/main/README.pt-BR.md",
         "../react-shadcn/README.md": "react/",
     }
@@ -85,7 +85,7 @@ def main():
     for name in ("gallery.css", "gallery.js"):
         shutil.copy2(gallery / name, output / name)
     (output / "assets").mkdir()
-    shutil.copy2(ROOT / "skills/cafe-com-leite-ui/assets/soft-ui.css", output / "assets/soft-ui.css")
+    shutil.copy2(ROOT / "skills/coffee-and-milk-ui/assets/soft-ui.css", output / "assets/soft-ui.css")
     shutil.copytree(built, output / "react")
     (output / ".nojekyll").touch()
     prefix = f"/{args.repository.split('/')[1]}/"

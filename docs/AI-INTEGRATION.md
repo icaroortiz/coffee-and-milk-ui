@@ -1,14 +1,14 @@
 # Integrating with an AI coding agent
 
-[Quickstart in English](QUICKSTART.md) · [Instalação e prompt em português](QUICKSTART.pt-BR.md) · [English README](../README.md) · [README em português](../README.pt-BR.md) · [Skill entrypoint](../skills/cafe-com-leite-ui/SKILL.md)
+[Quickstart in English](QUICKSTART.md) · [Instalação e prompt em português](QUICKSTART.pt-BR.md) · [English README](../README.md) · [README em português](../README.pt-BR.md) · [Skill entrypoint](../skills/coffee-and-milk-ui/SKILL.md)
 
-Use Café com Leite UI as design and implementation guidance inside the project you are working on. It does not need a model API, service account, package registry or remote runtime.
+Use Coffee & Milk UI as design and implementation guidance inside the project you are working on. It does not need a model API, service account, package registry or remote runtime.
 
 ## Choose the right entrypoint
 
 | What you are doing | Read first |
 | --- | --- |
-| Applying this visual approach to your own product | [`skills/cafe-com-leite-ui/SKILL.md`](../skills/cafe-com-leite-ui/SKILL.md) |
+| Applying this visual approach to your own product | [`skills/coffee-and-milk-ui/SKILL.md`](../skills/coffee-and-milk-ui/SKILL.md) |
 | Contributing to this repository | [`AGENTS.md`](../AGENTS.md), then [`CONTRIBUTING.md`](../CONTRIBUTING.md) |
 | Trying a runnable integration | [`examples/react-shadcn/README.md`](../examples/react-shadcn/README.md) |
 
@@ -16,7 +16,7 @@ Use Café com Leite UI as design and implementation guidance inside the project 
 
 ## Codex
 
-Choose the chat installer or terminal command in the [quickstart](QUICKSTART.md), then invoke `$cafe-com-leite-ui` in your project. Codex detects new skills automatically; restart if it does not appear. Installation does not apply a theme or modify the project until you ask the agent to use the skill.
+Choose the chat installer or terminal command in the [quickstart](QUICKSTART.md), then invoke `$coffee-and-milk-ui` in your project. Codex detects new skills automatically; restart if it does not appear. Installation does not apply a theme or modify the project until you ask the agent to use the skill.
 
 The installed folder contains everything the skill references: instructions, design recipes, the optional material preset and the MIT license. Preserve this structure when copying or distributing it.
 
@@ -24,10 +24,10 @@ If discovery is unavailable, provide the path to `SKILL.md` explicitly. The `age
 
 ## Other coding agents
 
-Place the skill folder in a location the agent can read, such as `design-skills/cafe-com-leite-ui/` inside your project. Then make an explicit request:
+Place the skill folder in a location the agent can read, such as `design-skills/coffee-and-milk-ui/` inside your project. Then make an explicit request:
 
 ```text
-Read design-skills/cafe-com-leite-ui/SKILL.md and apply it to this task.
+Read design-skills/coffee-and-milk-ui/SKILL.md and apply it to this task.
 Follow this project's existing instructions and keep the requested scope.
 Read the linked references only when they help with the implementation.
 ```
@@ -40,10 +40,10 @@ Start with `SKILL.md`. It routes to the details below; there is no need to load 
 
 | Reference | Use it when |
 | --- | --- |
-| [`design-system.md`](../skills/cafe-com-leite-ui/references/design-system.md) | Establishing tokens, surface materials, density, mobile behavior or motion. |
-| [`shadcn-recipes.md`](../skills/cafe-com-leite-ui/references/shadcn-recipes.md) | Integrating existing shadcn components, portaled overlays or token formats. |
-| [`validation.md`](../skills/cafe-com-leite-ui/references/validation.md) | Choosing proportionate checks for the changed interface. |
-| [`soft-ui.css`](../skills/cafe-com-leite-ui/assets/soft-ui.css) | Adapting the optional CSS preset into a project. |
+| [`design-system.md`](../skills/coffee-and-milk-ui/references/design-system.md) | Establishing tokens, surface materials, density, mobile behavior or motion. |
+| [`shadcn-recipes.md`](../skills/coffee-and-milk-ui/references/shadcn-recipes.md) | Integrating existing shadcn components, portaled overlays or token formats. |
+| [`validation.md`](../skills/coffee-and-milk-ui/references/validation.md) | Choosing proportionate checks for the changed interface. |
+| [`soft-ui.css`](../skills/coffee-and-milk-ui/assets/soft-ui.css) | Adapting the optional CSS preset into a project. |
 
 The preset uses `[data-soft-ui]`, `data-sui-theme` and `--sui-*` variables to keep its surface styles scoped. Map them into the application's existing theme rather than creating a competing theme system. Portaled dialogs must inherit the same theme as the page.
 
@@ -52,7 +52,7 @@ The preset uses `[data-soft-ui]`, `data-sui-theme` and `--sui-*` variables to ke
 Specify the screen, audience, primary task, brand constraints and behavior that must stay intact. Name one difficult state worth testing, such as a long table, an empty conversation or an invalid form.
 
 ```text
-Use $cafe-com-leite-ui on the scheduling screen only.
+Use $coffee-and-milk-ui on the scheduling screen only.
 
 Audience: a small studio managing client sessions.
 Primary task: see today's appointments and add a new session quickly.
@@ -71,7 +71,7 @@ For an approved direction, replace the last sentence with the actual rollout sco
 ### Prompt em português
 
 ```text
-Use $cafe-com-leite-ui na tela de agenda deste projeto.
+Use $coffee-and-milk-ui na tela de agenda deste projeto.
 
 O usuário precisa encontrar os compromissos de hoje e criar um novo
 agendamento com facilidade. Preserve nossa marca, fonte, ícones, rotas,

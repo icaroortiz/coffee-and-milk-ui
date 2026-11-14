@@ -1,9 +1,9 @@
 ---
-name: cafe-com-leite-ui
+name: coffee-and-milk-ui
 description: "Build or refine dashboards and internal tools with subtle Soft UI depth, coherent surfaces, and accessible controls. Use for this visual style or consistent application chrome, forms, and panels, especially with existing shadcn/ui and Tailwind projects. Adapt to the product's brand; do not automatically restyle public websites."
 ---
 
-# Café com Leite UI
+# Coffee & Milk UI
 
 Create work interfaces with clear hierarchy, subtle depth, and a consistent finish. Let the user's task determine the layout and density; use surface treatments to support it. The name describes a dependable foundation, not a required coffee-colored palette.
 

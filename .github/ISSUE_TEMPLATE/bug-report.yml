@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        English or Portuguese is welcome. For security vulnerabilities, follow [SECURITY.md](https://github.com/icaroortiz/cafe-com-leite-ui/blob/main/SECURITY.md) instead of posting details here.
+        English or Portuguese is welcome. For security vulnerabilities, follow [SECURITY.md](https://github.com/icaroortiz/coffee-and-milk-ui/blob/main/SECURITY.md) instead of posting details here.
   - type: dropdown
     id: area
     attributes:

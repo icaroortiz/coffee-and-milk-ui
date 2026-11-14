@@ -74,10 +74,10 @@ Pacote e exemplos preparados localmente. Layouts conferidos em desktop e telas d
 
 ## Public deployment — 2026-11-14
 
-- Public repository: [icaroortiz/cafe-com-leite-ui](https://github.com/icaroortiz/cafe-com-leite-ui), with MIT detected, issue templates, repository topics and private vulnerability reporting enabled.
-- [CI run 43600741889](https://github.com/icaroortiz/cafe-com-leite-ui/actions/runs/43600741889) passed the repository checks, locked dependency installation, React type-check/build and release packaging.
-- [Pages run 43600741784](https://github.com/icaroortiz/cafe-com-leite-ui/actions/runs/43600741784) deployed the examples from commit `6e0b437` successfully.
-- [Gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) and [React example](https://icaroortiz.github.io/cafe-com-leite-ui/react/) returned HTTP 200 and were inspected in isolated Chrome at 1280 and 320 px. No horizontal page overflow, JavaScript page errors or failed HTTP responses were observed.
+- Public repository: [icaroortiz/cafe-com-leite-ui](https://github.com/icaroortiz/coffee-and-milk-ui), with MIT detected, issue templates, repository topics and private vulnerability reporting enabled.
+- [CI run 43600741889](https://github.com/icaroortiz/coffee-and-milk-ui/actions/runs/43600741889) passed the repository checks, locked dependency installation, React type-check/build and release packaging.
+- [Pages run 43600741784](https://github.com/icaroortiz/coffee-and-milk-ui/actions/runs/43600741784) deployed the examples from commit `6e0b437` successfully.
+- [Gallery](https://icaroortiz.github.io/coffee-and-milk-ui/) and [React example](https://icaroortiz.github.io/coffee-and-milk-ui/react/) returned HTTP 200 and were inspected in isolated Chrome at 1280 and 320 px. No horizontal page overflow, JavaScript page errors or failed HTTP responses were observed.
 - The deployed gallery link opens the React example at the correct GitHub Pages subpath. Both mobile dialogs fit within the 320 × 700 viewport and close with Escape. Theme switching was exercised; the React example also switched to its teal palette.
 - Release archives are generated from the source allowlist, checked for ZIP integrity and accompanied by SHA-256 checksums. They exclude dependencies, build output and development artifacts.
 
@@ -91,3 +91,15 @@ Pacote e exemplos preparados localmente. Layouts conferidos em desktop e telas d
 - This update changes documentation only. Earlier rendered-interface checks remain the visual evidence; they were not repeated for these text changes.
 
 **Em português:** instalação conferida em pastas temporárias pelo terminal e pelo modo Git do instalador do Codex. Suas instalações existentes foram preservadas. O teste não certifica descoberta automática em todas as IAs.
+
+
+## Coffee & Milk UI 0.2.0 — 2026-11-14
+
+This section records the rename validation. Earlier sections retain the scope of the 0.1.0 checks; repository and demo links above point to the new project location.
+
+- The repository checker passed for 60 source files and 89 relative Markdown links. Skill frontmatter/scaffold validation passed with the new `coffee-and-milk-ui` name.
+- The React production build passed with `/coffee-and-milk-ui/react/` as its base. The Pages staging script validated local asset links for the renamed repository.
+- Gallery and React screenshots were refreshed and visually inspected in isolated Chrome 157 at 1280 px (light), 390 px (light), and 320 px (dark). The new brand was visible, with no JavaScript page errors or horizontal page overflow in those six cases.
+- The SVG banner was inspected at the same widths without clipping the new name.
+- This rename preserves the `[data-soft-ui]` CSS scope, `--sui-*` tokens, component behavior, and dependency versions. The historical accessibility and interaction checks above were not rerun for this branding change.
+- These are local checks. Remote CI, deployment, release, and global installation must be verified separately after publication.

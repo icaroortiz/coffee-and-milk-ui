@@ -38,7 +38,7 @@ npm --prefix examples/react-shadcn run typecheck
 npm --prefix examples/react-shadcn run build
 ```
 
-Use the [local example instructions](README.md#run-locally) to inspect the rendered result. For visual changes, include desktop and relevant mobile screenshots. Check keyboard focus, themes and error/empty states affected by the change. The [skill's validation guide](skills/cafe-com-leite-ui/references/validation.md) helps choose checks proportional to the work.
+Use the [local example instructions](README.md#run-locally) to inspect the rendered result. For visual changes, include desktop and relevant mobile screenshots. Check keyboard focus, themes and error/empty states affected by the change. The [skill's validation guide](skills/coffee-and-milk-ui/references/validation.md) helps choose checks proportional to the work.
 
 A successful build is not visual approval. An automated accessibility result does not establish complete accessibility or device coverage. Record any concrete limitation; do not invent test results.
 

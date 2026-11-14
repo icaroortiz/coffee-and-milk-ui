@@ -43,6 +43,6 @@ The runnable example depends on React, Vite, Tailwind CSS, Radix UI, Lucide, cla
 
 ## Visual references and original work
 
-Café com Leite UI's skill instructions, token preset, gallery, layout and application-specific example code are original contributions. The neomorphism reference linked in the documentation is a visual reference; its source, screenshots and imagery are not redistributed here. No Tocwise application code, logo, customer records, screenshots, property photographs or credentials are included.
+Coffee & Milk UI's skill instructions, token preset, gallery, layout and application-specific example code are original contributions. The neomorphism reference linked in the documentation is a visual reference; its source, screenshots and imagery are not redistributed here. No Tocwise application code, logo, customer records, screenshots, property photographs or credentials are included.
 
 This project is independent and is not affiliated with or endorsed by shadcn, Radix UI, Tailwind CSS, 21st.dev or their authors.

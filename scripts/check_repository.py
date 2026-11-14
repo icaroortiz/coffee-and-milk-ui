@@ -16,12 +16,12 @@ REQUIRED = (
     "README.md", "README.pt-BR.md", "AGENTS.md", "LICENSE", "CONTRIBUTING.md",
     "CHANGELOG.md", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
     "docs/AI-INTEGRATION.md", "docs/VALIDATION.md",
-    "skills/cafe-com-leite-ui/SKILL.md", "skills/cafe-com-leite-ui/LICENSE",
-    "skills/cafe-com-leite-ui/agents/openai.yaml",
-    "skills/cafe-com-leite-ui/references/design-system.md",
-    "skills/cafe-com-leite-ui/references/shadcn-recipes.md",
-    "skills/cafe-com-leite-ui/references/validation.md",
-    "skills/cafe-com-leite-ui/assets/soft-ui.css",
+    "skills/coffee-and-milk-ui/SKILL.md", "skills/coffee-and-milk-ui/LICENSE",
+    "skills/coffee-and-milk-ui/agents/openai.yaml",
+    "skills/coffee-and-milk-ui/references/design-system.md",
+    "skills/coffee-and-milk-ui/references/shadcn-recipes.md",
+    "skills/coffee-and-milk-ui/references/validation.md",
+    "skills/coffee-and-milk-ui/assets/soft-ui.css",
     "examples/gallery/index.html", "examples/gallery/gallery.css",
     "examples/gallery/gallery.js", "examples/react-shadcn/package.json",
     "examples/react-shadcn/package-lock.json", "examples/react-shadcn/SHADCN_LICENSE",
@@ -37,13 +37,13 @@ def check():
         return errors, 0, 0
 
     files = list(source_files())
-    skill = (ROOT / "skills/cafe-com-leite-ui/SKILL.md").read_text()
+    skill = (ROOT / "skills/coffee-and-milk-ui/SKILL.md").read_text()
     frontmatter = re.match(r"\A---\n(.*?)\n---(?:\n|$)", skill, re.S)
     if not frontmatter:
         errors.append("SKILL.md must start with YAML frontmatter")
     else:
         fields = dict(re.findall(r"^(name|description):\s*(.+)$", frontmatter[1], re.M))
-        if fields.get("name") != "cafe-com-leite-ui":
+        if fields.get("name") != "coffee-and-milk-ui":
             errors.append("Skill name must match the installable directory")
         if not fields.get("description", "").strip(' \"\''):
             errors.append("Skill description is required")
@@ -51,7 +51,7 @@ def check():
     license_text = (ROOT / "LICENSE").read_text()
     if "MIT License" not in license_text or "Permission is hereby granted" not in license_text:
         errors.append("Root MIT license is incomplete")
-    if (ROOT / "skills/cafe-com-leite-ui/LICENSE").read_text() != license_text:
+    if (ROOT / "skills/coffee-and-milk-ui/LICENSE").read_text() != license_text:
         errors.append("The installable skill must carry the same license")
     if "Permission is hereby granted" not in (ROOT / "examples/react-shadcn/SHADCN_LICENSE").read_text():
         errors.append("Copied shadcn components must retain their MIT license")
