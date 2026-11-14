@@ -1,6 +1,6 @@
 # Integrating with an AI coding agent
 
-[English README](../README.md) · [README em português](../README.pt-BR.md) · [Skill entrypoint](../skills/cafe-com-leite-ui/SKILL.md)
+[Quickstart in English](QUICKSTART.md) · [Instalação e prompt em português](QUICKSTART.pt-BR.md) · [English README](../README.md) · [README em português](../README.pt-BR.md) · [Skill entrypoint](../skills/cafe-com-leite-ui/SKILL.md)
 
 Use Café com Leite UI as design and implementation guidance inside the project you are working on. It does not need a model API, service account, package registry or remote runtime.
 
@@ -16,7 +16,7 @@ Use Café com Leite UI as design and implementation guidance inside the project 
 
 ## Codex
 
-Use the installation command in the [README](../README.md#install-in-codex), then start a new conversation and invoke `$cafe-com-leite-ui`.
+Choose the chat installer or terminal command in the [quickstart](QUICKSTART.md), then invoke `$cafe-com-leite-ui` in your project. Codex detects new skills automatically; restart if it does not appear. Installation does not apply a theme or modify the project until you ask the agent to use the skill.
 
 The installed folder contains everything the skill references: instructions, design recipes, the optional material preset and the MIT license. Preserve this structure when copying or distributing it.
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Documentation
+
+- Added English and Brazilian Portuguese quickstarts with Codex chat installation, a terminal alternative, copyable project prompts and manual integration for other AI agents.
+- Made installation discoverable from both READMEs and recorded isolated installer checks.
+
 ## 0.1.0 — 2026-11-14
 
 First community edition of Café com Leite UI.

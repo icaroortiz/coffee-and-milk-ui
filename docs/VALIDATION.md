@@ -82,3 +82,12 @@ Pacote e exemplos preparados localmente. Layouts conferidos em desktop e telas d
 - Release archives are generated from the source allowlist, checked for ZIP integrity and accompanied by SHA-256 checksums. They exclude dependencies, build output and development artifacts.
 
 **Em português:** repositório e exemplos publicados no GitHub. CI e publicação do Pages passaram. As duas demonstrações foram conferidas no endereço público em desktop e 320 px, incluindo tema e modal. Os limites dos testes locais descritos acima continuam válidos.
+
+## Installation documentation — 2026-11-14
+
+- The Skills CLI installed `cafe-com-leite-ui` from the public repository into a temporary project using `--skill cafe-com-leite-ui --agent codex --copy --yes`. The resulting `.agents/skills/cafe-com-leite-ui/` contained the entrypoint, license and references. Node.js 24.18.0 and npm 11.16.0 were used.
+- The bundled Codex skill installer installed the same public skill into a temporary destination using its Git method. All eight files matched the source byte for byte. Its default Python download encountered a local certificate-chain error; Git mode succeeded without disabling TLS verification.
+- The documented global CLI option follows the CLI's official documentation. The smoke test intentionally used project scope, so existing personal skill installations were not replaced. Automatic discovery inside each AI client was not exercised.
+- This update changes documentation only. Earlier rendered-interface checks remain the visual evidence; they were not repeated for these text changes.
+
+**Em português:** instalação conferida em pastas temporárias pelo terminal e pelo modo Git do instalador do Codex. Suas instalações existentes foram preservadas. O teste não certifica descoberta automática em todas as IAs.

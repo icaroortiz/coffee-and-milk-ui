@@ -8,7 +8,7 @@
 [![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-82334f)](CHANGELOG.md)
 [![MIT License](https://img.shields.io/badge/license-MIT-176b55)](LICENSE)
 
-[Live gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) · [React + shadcn demo](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Download v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [AI integration](docs/AI-INTEGRATION.md) · [Português brasileiro](README.pt-BR.md)
+[Install & use](docs/QUICKSTART.md) · [Live gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) · [React + shadcn demo](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Download v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [AI integration](docs/AI-INTEGRATION.md) · [Português brasileiro](README.pt-BR.md)
 
 A reusable **AI coding skill for dashboards and internal tools**. It brings clear hierarchy, subtle Soft UI depth, coherent colors and practical **shadcn/ui + Tailwind** guidance to your existing project.
 
@@ -29,28 +29,25 @@ This is **a skill, optional CSS and working examples**. It is not a component-li
 
 ## Get started
 
-Clone the repository:
-
-```sh
-git clone https://github.com/icaroortiz/cafe-com-leite-ui.git
-cd cafe-com-leite-ui
-```
+Install once, then invoke the skill in the project you want to improve. Installation makes the guidance available; it does not change your app by itself. The [quickstart](docs/QUICKSTART.md) includes a complete copyable prompt and instructions for other AI agents.
 
 ### Install in Codex
 
-Copy the self-contained skill folder, including its license and references:
+Paste this into **Codex chat**, not your terminal:
 
-```sh
-skill_root="${CODEX_HOME:-$HOME/.codex}/skills"
-skill_target="$skill_root/cafe-com-leite-ui"
-if [ -e "$skill_target" ]; then
-  printf 'Already installed: %s — compare before replacing.\n' "$skill_target"
-else
-  mkdir -p "$skill_root" && cp -R skills/cafe-com-leite-ui "$skill_target"
-fi
+```text
+$skill-installer install the skill at https://github.com/icaroortiz/cafe-com-leite-ui/tree/main/skills/cafe-com-leite-ui
 ```
 
-Open a new Codex conversation and use:
+Or use your **terminal**, with Node.js 22.20+ and the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add icaroortiz/cafe-com-leite-ui --skill cafe-com-leite-ui --agent codex --global
+```
+
+Choose one installation method. `--global` makes it available across projects; omit it to install only in the current project. Codex detects new skills automatically; restart it if the skill does not appear. See the [official Codex guidance](https://learn.chatgpt.com/docs/build-skills).
+
+Then open your project and ask:
 
 ```text
 Use $cafe-com-leite-ui to refine this dashboard.
@@ -59,7 +56,7 @@ representative screen and an important error or empty state before
 extending the direction. Check desktop, mobile and the supported themes.
 ```
 
-The command preserves an existing installation. If your client does not discover the skill, give it the installed `SKILL.md` path explicitly.
+Use the [complete prompt](docs/QUICKSTART.md#2-paste-this-prompt-into-your-project) for a broader brief covering shadcn, tokens, accessibility and mobile/PWA behavior.
 
 ### Use with another coding agent
 
@@ -89,6 +86,13 @@ All sample data is fictional. Demo actions stay local; no authentication, paymen
 </details>
 
 ## Run locally
+
+To inspect the source or run the examples, clone the repository:
+
+```sh
+git clone https://github.com/icaroortiz/cafe-com-leite-ui.git
+cd cafe-com-leite-ui
+```
 
 **Static gallery:** from the repository root:
 

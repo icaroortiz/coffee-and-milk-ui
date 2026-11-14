@@ -8,7 +8,7 @@
 [![Versão 0.1.0](https://img.shields.io/badge/version-0.1.0-82334f)](CHANGELOG.md)
 [![Licença MIT](https://img.shields.io/badge/license-MIT-176b55)](LICENSE)
 
-[Galeria online](https://icaroortiz.github.io/cafe-com-leite-ui/) · [Demo React + shadcn](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Baixar v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [Integração com IA](docs/AI-INTEGRATION.md) · [English](README.md)
+[Instalar e usar](docs/QUICKSTART.pt-BR.md) · [Galeria online](https://icaroortiz.github.io/cafe-com-leite-ui/) · [Demo React + shadcn](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Baixar v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [Integração com IA](docs/AI-INTEGRATION.md) · [English](README.md)
 
 Uma **skill reutilizável para agentes de programação criarem dashboards e áreas internas**. Traz hierarquia clara, profundidade discreta de Soft UI, cores coerentes e orientações práticas de **shadcn/ui + Tailwind** para o projeto que você já tem.
 
@@ -29,28 +29,25 @@ Este pacote reúne **uma skill, CSS opcional e exemplos funcionais**. Não é um
 
 ## Comece por aqui
 
-Clone o repositório:
-
-```sh
-git clone https://github.com/icaroortiz/cafe-com-leite-ui.git
-cd cafe-com-leite-ui
-```
+Instale uma vez e invoque a skill no projeto que deseja melhorar. A instalação disponibiliza as orientações; não modifica a aplicação sozinha. O [guia rápido](docs/QUICKSTART.pt-BR.md) inclui um prompt completo para copiar e instruções para outras IAs.
 
 ### Instalar no Codex
 
-Copie a pasta completa da skill, incluindo licença e referências:
+Cole isto **no chat do Codex**, não no terminal:
 
-```sh
-skill_root="${CODEX_HOME:-$HOME/.codex}/skills"
-skill_target="$skill_root/cafe-com-leite-ui"
-if [ -e "$skill_target" ]; then
-  printf 'Já existe: %s — compare antes de substituir.\n' "$skill_target"
-else
-  mkdir -p "$skill_root" && cp -R skills/cafe-com-leite-ui "$skill_target"
-fi
+```text
+$skill-installer instale a skill em https://github.com/icaroortiz/cafe-com-leite-ui/tree/main/skills/cafe-com-leite-ui
 ```
 
-Abra uma nova conversa no Codex e use:
+Ou use o **terminal**, com Node.js 22.20+ e a [CLI Skills](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add icaroortiz/cafe-com-leite-ui --skill cafe-com-leite-ui --agent codex --global
+```
+
+Escolha uma forma de instalação. `--global` disponibiliza a skill entre projetos; retire essa opção para instalar somente no projeto atual. O Codex detecta novas skills automaticamente; reinicie se ela não aparecer. Consulte a [orientação oficial do Codex](https://learn.chatgpt.com/docs/build-skills).
+
+Depois abra seu projeto e peça:
 
 ```text
 Use $cafe-com-leite-ui para refinar este dashboard.
@@ -59,7 +56,7 @@ representativa e um estado importante de erro ou vazio antes de ampliar
 a direção. Confira desktop, celular e os temas disponíveis.
 ```
 
-O comando preserva uma instalação existente. Se o cliente não identificar a skill, informe explicitamente o caminho do `SKILL.md` instalado.
+Use o [prompt completo](docs/QUICKSTART.pt-BR.md#2-cole-este-prompt-no-projeto) para incluir shadcn, tokens, acessibilidade e comportamento no mobile/PWA.
 
 ### Usar com outro agente de programação
 
@@ -89,6 +86,13 @@ Todos os dados são fictícios. As ações das demos são locais; não há auten
 </details>
 
 ## Rodar localmente
+
+Para consultar o código ou rodar os exemplos, clone o repositório:
+
+```sh
+git clone https://github.com/icaroortiz/cafe-com-leite-ui.git
+cd cafe-com-leite-ui
+```
 
 **Galeria estática:** na raiz do repositório:
 
