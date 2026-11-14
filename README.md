@@ -12,6 +12,8 @@
 
 A reusable **AI coding skill for dashboards and internal tools**. It brings clear hierarchy, subtle Soft UI depth, coherent colors and practical **shadcn/ui + Tailwind** guidance to your existing project.
 
+**Works with Codex and Claude Code.** Install the same skill for either client using the instructions below.
+
 **The basics, done well:** clear typography, consistent spacing, accessible controls and useful feedback. Your product keeps its own palette and identity.
 
 ![A burgundy scheduling dashboard built with Coffee & Milk UI](docs/images/gallery-desktop.png)
@@ -57,6 +59,23 @@ extending the direction. Check desktop, mobile and the supported themes.
 ```
 
 Use the [complete prompt](docs/QUICKSTART.md#2-paste-this-prompt-into-your-project) for a broader brief covering shadcn, tokens, accessibility and mobile/PWA behavior.
+
+### Install in Claude Code
+
+Run in your **terminal**, with Node.js 22.20+:
+
+```sh
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent claude-code --global
+```
+
+`--global` installs for your projects on this machine. Omit it to install only in the current project. Then open Claude Code in your project and send:
+
+```text
+/coffee-and-milk-ui Refine this dashboard. Preserve our brand, features and
+stack. Start with one representative screen and check desktop and mobile.
+```
+
+Claude Code uses `/coffee-and-milk-ui`; Codex uses `$coffee-and-milk-ui`. Both load the same design guidance. See the [complete prompt and manual installation](docs/QUICKSTART.md) and [official Claude Code skills documentation](https://code.claude.com/docs/en/skills).
 
 ### Use with another coding agent
 

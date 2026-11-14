@@ -2,9 +2,11 @@
 
 [English](QUICKSTART.md) · [README](../README.pt-BR.md) · [Guia para agentes de IA](AI-INTEGRATION.md)
 
-Instale a skill uma vez e peça à IA para aplicá-la no projeto desejado. Ela orienta o design e a implementação; não é uma biblioteca React que transforma a interface automaticamente.
+Instale a skill uma vez no **Codex ou Claude Code** e peça à IA para aplicá-la no projeto desejado. Ela orienta o design e a implementação; não é uma biblioteca React que transforma a interface automaticamente.
 
-## 1. Escolha uma forma de instalar
+## 1. Escolha seu agente de programação
+
+O mesmo pacote `SKILL.md` funciona no **Codex e no Claude Code**. Escolha uma forma de instalação por cliente.
 
 ### Pelo chat do Codex
 
@@ -16,7 +18,7 @@ $skill-installer instale a skill em https://github.com/icaroortiz/coffee-and-mil
 
 Depois, invoque `$coffee-and-milk-ui` na tarefa. O Codex detecta novas skills automaticamente; se ela não aparecer, reinicie o Codex. [Documentação oficial de skills](https://learn.chatgpt.com/docs/build-skills).
 
-### Pelo terminal
+### Pelo terminal no Codex
 
 Como alternativa, com **Node.js 22.20 ou superior**, use a CLI aberta `skills`, da Vercel:
 
@@ -26,9 +28,33 @@ npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent 
 
 `--global` disponibiliza a skill para seus projetos. Para instalar somente no projeto atual, execute dentro dele e retire `--global`. Escolha uma das duas formas para evitar instalações duplicadas. Essa CLI instala instruções para agentes; não adiciona uma dependência visual à aplicação. [Requisitos e instalação](https://github.com/vercel-labs/skills), [opções do comando](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
 
+### No Claude Code
+
+No **terminal**, com **Node.js 22.20 ou superior**, use a mesma CLI com o agente `claude-code`:
+
+```sh
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent claude-code --global
+```
+
+Mantenha `--global` para usar entre projetos. Para instalar apenas no projeto atual, execute dentro dele e retire essa opção. Abra o projeto no Claude Code e invoque a skill no início da mensagem:
+
+```text
+/coffee-and-milk-ui Refine este dashboard preservando nossa marca, funcionalidades e stack.
+```
+
+Como alternativa à CLI, copie a **pasta completa** `skills/coffee-and-milk-ui/` deste repositório para `~/.claude/skills/coffee-and-milk-ui/` (uso pessoal) ou `.claude/skills/coffee-and-milk-ui/` dentro do projeto (uso apenas nesse projeto). O `SKILL.md` deve ficar diretamente nessa pasta, junto com `references/` e `assets/`. Preserve personalizações se já existir uma instalação. [Documentação oficial do Claude Code](https://code.claude.com/docs/en/skills).
+
 ## 2. Cole este prompt no projeto
 
 Troque os campos opcionais se quiser: **tela**, **público** e **marca**. Se não os informar, a IA deve partir do contexto existente.
+
+O prompt abaixo usa a invocação do **Codex**, `$coffee-and-milk-ui`. No **Claude Code**, substitua apenas a primeira linha por:
+
+```text
+/coffee-and-milk-ui Refine o dashboard e a área interna deste projeto.
+```
+
+Mantenha o restante do prompt igual nos dois clientes:
 
 ```text
 Use $coffee-and-milk-ui para refinar o dashboard e a área interna deste projeto.
@@ -73,6 +99,6 @@ Se a ferramenta não acessar arquivos locais ou links do GitHub, anexe o `SKILL.
 
 ## Atualizando da Café com Leite UI
 
-O projeto e a skill foram renomeados na v0.2.0. Instale `coffee-and-milk-ui` por um dos métodos acima e use `$coffee-and-milk-ui`. Depois de confirmar a nova instalação, remova a antiga `cafe-com-leite-ui` pelo mesmo instalador ou mova sua pasta para fora do diretório de skills ativas do seu cliente. Preserve eventuais personalizações antes de substituí-la.
+O projeto e a skill foram renomeados na v0.2.0. Instale `coffee-and-milk-ui` por um dos métodos acima e use `$coffee-and-milk-ui` no Codex ou `/coffee-and-milk-ui` no Claude Code. Depois de confirmar a nova instalação, remova a antiga `cafe-com-leite-ui` pelo mesmo instalador ou mova sua pasta para fora do diretório de skills ativas do seu cliente. Preserve eventuais personalizações antes de substituí-la.
 
 Atualize prompts salvos e favoritos. A demonstração agora está em [coffee-and-milk-ui](https://icaroortiz.github.io/coffee-and-milk-ui/). O CSS já copiado mantém o mesmo escopo `[data-soft-ui]` e os tokens `--sui-*`; sua aplicação não precisa migrar o tema. A versão v0.1.0 continua arquivada com seu nome original.

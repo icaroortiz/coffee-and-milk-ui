@@ -92,6 +92,15 @@ Pacote e exemplos preparados localmente. Layouts conferidos em desktop e telas d
 
 **Em português:** instalação conferida em pastas temporárias pelo terminal e pelo modo Git do instalador do Codex. Suas instalações existentes foram preservadas. O teste não certifica descoberta automática em todas as IAs.
 
+## Claude Code installation documentation — 2026-11-14
+
+- The Skills CLI installed `coffee-and-milk-ui` from the public repository into a temporary project using `--skill coffee-and-milk-ui --agent claude-code --copy --yes`.
+- The resulting `.claude/skills/coffee-and-milk-ui/` contained the complete skill. All eight files matched the repository source byte for byte; no personal installation was changed.
+- The documented `/coffee-and-milk-ui` invocation and personal/project paths were checked against the [official Claude Code skills guide](https://code.claude.com/docs/en/skills). This verifies package installation, not an end-to-end design task inside Claude Code.
+- English and Portuguese installation instructions now distinguish Codex and Claude Code invocation. The skill instructions and UI examples were unchanged; earlier visual checks were not repeated.
+
+**Em português:** instalação para Claude Code conferida em um projeto temporário, com todos os arquivos iguais à origem. Não foi executada uma tarefa de design dentro do Claude Code nem alterada a instalação pessoal.
+
 
 ## Coffee & Milk UI 0.2.0 — 2026-11-14
 

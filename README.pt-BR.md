@@ -12,6 +12,8 @@
 
 Uma **skill reutilizável para agentes de programação criarem dashboards e áreas internas**. Traz hierarquia clara, profundidade discreta de Soft UI, cores coerentes e orientações práticas de **shadcn/ui + Tailwind** para o projeto que você já tem.
 
+**Compatível com Codex e Claude Code.** Instale a mesma skill no cliente que preferir seguindo as instruções abaixo.
+
 **O básico bem-feito:** tipografia clara, espaçamento consistente, controles acessíveis e respostas úteis às ações. Seu produto mantém a própria paleta e identidade.
 
 ![Dashboard de agenda em vinho construído com Coffee & Milk UI](docs/images/gallery-desktop.png)
@@ -29,7 +31,7 @@ Este pacote reúne **uma skill, CSS opcional e exemplos funcionais**. Não é um
 
 ## Comece por aqui
 
-Instale uma vez e invoque a skill no projeto que deseja melhorar. A instalação disponibiliza as orientações; não modifica a aplicação sozinha. O [guia rápido](docs/QUICKSTART.pt-BR.md) inclui um prompt completo para copiar e instruções para outras IAs.
+Instale uma vez no **Codex ou Claude Code** e invoque a skill no projeto que deseja melhorar. A instalação disponibiliza as orientações; não modifica a aplicação sozinha. O [guia rápido](docs/QUICKSTART.pt-BR.md) inclui um prompt completo para copiar e instruções para outras IAs.
 
 ### Instalar no Codex
 
@@ -56,7 +58,26 @@ representativa e um estado importante de erro ou vazio antes de ampliar
 a direção. Confira desktop, celular e os temas disponíveis.
 ```
 
-Use o [prompt completo](docs/QUICKSTART.pt-BR.md#2-cole-este-prompt-no-projeto) para incluir shadcn, tokens, acessibilidade e comportamento no mobile/PWA.
+### Instalar no Claude Code
+
+No **terminal**, com Node.js 22.20+ e a [CLI Skills](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent claude-code --global
+```
+
+`--global` disponibiliza a skill entre projetos; para instalar somente no projeto atual, execute dentro dele e retire essa opção. Depois abra seu projeto no Claude Code e peça:
+
+```text
+/coffee-and-milk-ui Refine este dashboard.
+Preserve nossa marca, as funcionalidades e a stack atual. Prepare uma tela
+representativa e um estado importante de erro ou vazio antes de ampliar
+a direção. Confira desktop, celular e os temas disponíveis.
+```
+
+O Claude Code usa `/coffee-and-milk-ui`; o Codex usa `$coffee-and-milk-ui`. O [guia rápido](docs/QUICKSTART.pt-BR.md) também explica como copiar a pasta completa para os diretórios de skills do Claude Code. Consulte a [documentação oficial do Claude Code](https://code.claude.com/docs/en/skills).
+
+Use o [prompt completo](docs/QUICKSTART.pt-BR.md#2-cole-este-prompt-no-projeto) em qualquer um dos dois clientes para incluir shadcn, tokens, acessibilidade e comportamento no mobile/PWA.
 
 ### Usar com outro agente de programação
 

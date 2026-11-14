@@ -4,7 +4,9 @@
 
 Install the skill once, then ask your AI agent to apply it in the project you choose. It guides design and implementation; it is not a React library that automatically restyles your interface.
 
-## 1. Choose one installation method
+## 1. Choose your coding agent
+
+Coffee & Milk UI supports **Codex and Claude Code** through the same `SKILL.md` package. Choose one installation method per client.
 
 ### Through Codex chat
 
@@ -16,7 +18,7 @@ $skill-installer install the skill at https://github.com/icaroortiz/coffee-and-m
 
 Then invoke `$coffee-and-milk-ui` in your task. Codex detects newly installed skills automatically; restart Codex if it does not appear. [Official skills documentation](https://learn.chatgpt.com/docs/build-skills).
 
-### Through your terminal
+### Codex through your terminal
 
 Alternatively, with **Node.js 22.20 or newer**, use Vercel's open-source `skills` CLI:
 
@@ -26,9 +28,27 @@ npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent 
 
 `--global` makes the skill available across your projects. To install only in the current project, run the command inside it and omit `--global`. Choose one method to avoid duplicate installations. This CLI installs agent instructions; it does not add a visual dependency to your application. [Requirements and installation](https://github.com/vercel-labs/skills), [command options](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
 
+### Claude Code
+
+With **Node.js 22.20 or newer**, run in your terminal:
+
+```sh
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent claude-code --global
+```
+
+Use `--global` for your projects on this machine, or omit it for the current project. In Claude Code, invoke:
+
+```text
+/coffee-and-milk-ui Refine this dashboard while preserving our brand and existing functionality.
+```
+
+For a manual installation without the CLI, copy the **entire** `skills/coffee-and-milk-ui/` folder from this repository into `~/.claude/skills/coffee-and-milk-ui/` (personal) or `.claude/skills/coffee-and-milk-ui/` inside your project. Keep `SKILL.md`, `references/`, `assets/` and the license together. Preserve personal changes before replacing an existing installation. If the command does not appear, check that `SKILL.md` is directly inside that folder, then start a new Claude Code session. [Official Claude Code skills documentation](https://code.claude.com/docs/en/skills).
+
 ## 2. Paste this prompt into your project
 
 Optionally fill in **screen**, **audience**, and **brand**. Otherwise, the agent should use the existing project context.
+
+The prompt below uses Codex syntax. For **Claude Code**, replace its first line with `/coffee-and-milk-ui Refine this project's dashboard and internal workspace.` and keep the rest.
 
 ```text
 Use $coffee-and-milk-ui to refine this project's dashboard and internal workspace.
@@ -73,6 +93,6 @@ If the tool cannot access local files or GitHub links, attach `SKILL.md` and the
 
 ## Upgrading from Café com Leite UI
 
-The project and skill were renamed in v0.2.0. Install `coffee-and-milk-ui` with one of the methods above and invoke `$coffee-and-milk-ui`. Once the new installation is available, remove the old `cafe-com-leite-ui` installation through the same installer, or move its folder outside your client's active skills directory. Keep any personal modifications before replacing it.
+The project and skill were renamed in v0.2.0. Install `coffee-and-milk-ui` with one of the methods above and invoke `$coffee-and-milk-ui` in Codex or `/coffee-and-milk-ui` in Claude Code. Once the new installation is available, remove the old `cafe-com-leite-ui` installation through the same installer, or move its folder outside your client's active skills directory. Keep any personal modifications before replacing it.
 
 Update saved prompts and bookmarks. The demo now lives at [coffee-and-milk-ui](https://icaroortiz.github.io/coffee-and-milk-ui/). Existing copied CSS uses the same `[data-soft-ui]` scope and `--sui-*` tokens; your application does not need a theme migration. The v0.1.0 release remains archived under its original name.

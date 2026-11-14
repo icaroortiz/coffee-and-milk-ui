@@ -4,6 +4,8 @@
 
 Use Coffee & Milk UI as design and implementation guidance inside the project you are working on. It does not need a model API, service account, package registry or remote runtime.
 
+The same skill package supports **Codex and Claude Code**. The installation location and invocation syntax differ; the design guidance stays the same.
+
 ## Choose the right entrypoint
 
 | What you are doing | Read first |
@@ -21,6 +23,18 @@ Choose the chat installer or terminal command in the [quickstart](QUICKSTART.md)
 The installed folder contains everything the skill references: instructions, design recipes, the optional material preset and the MIT license. Preserve this structure when copying or distributing it.
 
 If discovery is unavailable, provide the path to `SKILL.md` explicitly. The `agents/openai.yaml` file supplies Codex display metadata; the Markdown is the canonical guidance.
+
+## Claude Code
+
+Install with the Skills CLI (Node.js 22.20+):
+
+```sh
+npx skills add icaroortiz/coffee-and-milk-ui --skill coffee-and-milk-ui --agent claude-code --global
+```
+
+Then invoke `/coffee-and-milk-ui` in Claude Code with your task. For project-only installation, omit `--global`. The [quickstart](QUICKSTART.md#claude-code) also covers copying the complete folder manually. These instructions target local Claude Code sessions; cloud and Cowork sessions have their own skill-loading settings. See [Claude Code's official skills guide](https://code.claude.com/docs/en/skills).
+
+Claude Code reads `SKILL.md` and its linked references. `agents/openai.yaml` is optional Codex metadata, not a requirement for Claude Code. No separate fork of the skill or extra application dependency is needed.
 
 ## Other coding agents
 
@@ -50,6 +64,8 @@ The preset uses `[data-soft-ui]`, `data-sui-theme` and `--sui-*` variables to ke
 ## Give the agent a useful brief
 
 Specify the screen, audience, primary task, brand constraints and behavior that must stay intact. Name one difficult state worth testing, such as a long table, an empty conversation or an invalid form.
+
+The examples below use Codex's `$coffee-and-milk-ui`. In Claude Code, start with `/coffee-and-milk-ui` followed by the task, and keep the remaining brief.
 
 ```text
 Use $coffee-and-milk-ui on the scheduling screen only.
@@ -103,4 +119,4 @@ The demonstration pending state and sample records are local UI behavior. Produc
 
 ## Em português
 
-Instale a pasta completa no Codex ou indique explicitamente o `SKILL.md` ao agente que usa. Comece por uma tela real, preserve a identidade do seu produto e carregue apenas as referências necessárias. `AGENTS.md` serve para contribuir neste repositório; a skill dentro de `skills/` é o material reutilizável nos seus projetos.
+Instale a pasta completa no Codex ou no Claude Code seguindo o [guia em português](QUICKSTART.pt-BR.md). Use `$coffee-and-milk-ui` no Codex e `/coffee-and-milk-ui` no Claude Code. Para outras IAs, indique explicitamente o `SKILL.md`. Comece por uma tela real, preserve a identidade do seu produto e carregue apenas as referências necessárias. `AGENTS.md` serve para contribuir neste repositório; a skill dentro de `skills/` é o material reutilizável nos seus projetos.
