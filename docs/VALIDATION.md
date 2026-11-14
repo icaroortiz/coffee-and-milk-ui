@@ -4,7 +4,7 @@
 
 **Date:** 2026-11-14
 
-**Scope:** recorded local validation before the community release.
+**Scope:** local package validation and public deployment verification for the community release.
 
 ## Environment and scope
 
@@ -65,8 +65,20 @@ Dependency installation reported zero npm vulnerabilities at the time of install
 - No complete assistive-technology audit, user study or performance benchmark was performed.
 - The examples demonstrate local UI behavior. The brief pending state is simulated; appointments reset on reload and need real server validation and persistence in a production application.
 - Skill structure and scenarios were reviewed, but no broad benchmark across coding agents, frameworks or niches is claimed.
-- These local checks do not, by themselves, validate repository metadata or public hosting.
+- The public checks below cover the deployed examples, not a production backend or third-party agent marketplace.
 
 ## Resumo em português
 
 Pacote e exemplos preparados localmente. Layouts conferidos em desktop e telas de 390 e 320 px, com claro/escuro, sem rolagem lateral e sem violações detectadas nos testes automatizados descritos. Formulário, foco e modal foram conferidos no navegador. Build e validação estrutural da skill passaram. Isso não representa teste em aparelho físico, certificação de acessibilidade ou validação de backend.
+
+
+## Public deployment — 2026-11-14
+
+- Public repository: [icaroortiz/cafe-com-leite-ui](https://github.com/icaroortiz/cafe-com-leite-ui), with MIT detected, issue templates, repository topics and private vulnerability reporting enabled.
+- [CI run 43600741889](https://github.com/icaroortiz/cafe-com-leite-ui/actions/runs/43600741889) passed the repository checks, locked dependency installation, React type-check/build and release packaging.
+- [Pages run 43600741784](https://github.com/icaroortiz/cafe-com-leite-ui/actions/runs/43600741784) deployed the examples from commit `6e0b437` successfully.
+- [Gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) and [React example](https://icaroortiz.github.io/cafe-com-leite-ui/react/) returned HTTP 200 and were inspected in isolated Chrome at 1280 and 320 px. No horizontal page overflow, JavaScript page errors or failed HTTP responses were observed.
+- The deployed gallery link opens the React example at the correct GitHub Pages subpath. Both mobile dialogs fit within the 320 × 700 viewport and close with Escape. Theme switching was exercised; the React example also switched to its teal palette.
+- Release archives are generated from the source allowlist, checked for ZIP integrity and accompanied by SHA-256 checksums. They exclude dependencies, build output and development artifacts.
+
+**Em português:** repositório e exemplos publicados no GitHub. CI e publicação do Pages passaram. As duas demonstrações foram conferidas no endereço público em desktop e 320 px, incluindo tema e modal. Os limites dos testes locais descritos acima continuam válidos.

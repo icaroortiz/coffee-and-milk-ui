@@ -8,7 +8,7 @@
 [![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-82334f)](CHANGELOG.md)
 [![MIT License](https://img.shields.io/badge/license-MIT-176b55)](LICENSE)
 
-[Live gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) · [React + shadcn demo](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [AI integration](docs/AI-INTEGRATION.md) · [Português brasileiro](README.pt-BR.md)
+[Live gallery](https://icaroortiz.github.io/cafe-com-leite-ui/) · [React + shadcn demo](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Download v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [AI integration](docs/AI-INTEGRATION.md) · [Português brasileiro](README.pt-BR.md)
 
 A reusable **AI coding skill for dashboards and internal tools**. It brings clear hierarchy, subtle Soft UI depth, coherent colors and practical **shadcn/ui + Tailwind** guidance to your existing project.
 

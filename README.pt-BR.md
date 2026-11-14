@@ -8,7 +8,7 @@
 [![Versão 0.1.0](https://img.shields.io/badge/version-0.1.0-82334f)](CHANGELOG.md)
 [![Licença MIT](https://img.shields.io/badge/license-MIT-176b55)](LICENSE)
 
-[Galeria online](https://icaroortiz.github.io/cafe-com-leite-ui/) · [Demo React + shadcn](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Integração com IA](docs/AI-INTEGRATION.md) · [English](README.md)
+[Galeria online](https://icaroortiz.github.io/cafe-com-leite-ui/) · [Demo React + shadcn](https://icaroortiz.github.io/cafe-com-leite-ui/react/) · [Baixar v0.1.0](https://github.com/icaroortiz/cafe-com-leite-ui/releases/tag/v0.1.0) · [Integração com IA](docs/AI-INTEGRATION.md) · [English](README.md)
 
 Uma **skill reutilizável para agentes de programação criarem dashboards e áreas internas**. Traz hierarquia clara, profundidade discreta de Soft UI, cores coerentes e orientações práticas de **shadcn/ui + Tailwind** para o projeto que você já tem.
 
